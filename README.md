@@ -1,57 +1,114 @@
-# 🚀 Getting started with Strapi
+# AI Resume App
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+This project is an AI-powered resume builder that incorporates various technologies and APIs. Follow this guide to learn how to create a React Vite app, implement authentication, set up a CMS, work with databases, generate AI content, and deploy your app.
 
-### `develop`
+## Features
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+- **Create React Vite App and Library Installation**
+- **Social and Email Password Authentication with Clerk**
+- **Learn Tailwind CSS**
+- **Strapi CMS Setup from Scratch**
+- **MySQL Database Setup**
+- **Generate AI Form with Google Gemini API**
+- **Setup Gemini API: AI Model**
+- **Generate Content from AI for Resume**
+- **Build Dynamic Forms**
+- **Convert React HTML to PDF**
+- **Step-by-Step Tutorial**
+- **Deploy App on Cloud / Vercel**
 
-```
-npm run develop
-# or
-yarn develop
-```
+## Table of Contents
 
-### `start`
+- [Installation](#installation)
+- [Setup and Configuration](#setup-and-configuration)
+- [Authentication](#authentication)
+- [CMS Setup](#cms-setup)
+- [Database Setup](#database-setup)
+- [AI Integration](#ai-integration)
+- [Dynamic Forms](#dynamic-forms)
+- [PDF Generation](#pdf-generation)
+- [Deployment](#deployment)
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+## Installation
 
-```
-npm run start
-# or
-yarn start
-```
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Rida-Lamiini/ai-resume-Strapi-admin.git
+    cd ai-resume-Strapi-admin
+    ```
 
-### `build`
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+## Setup and Configuration
 
-```
-npm run build
-# or
-yarn build
-```
+1. **Create a React Vite app:**
+    ```bash
+    npm create vite@latest my-app --template react
+    cd my-app
+    npm install
+    ```
 
-## ⚙️ Deployment
+2. **Install required libraries:**
+    ```bash
+    npm install tailwindcss postcss autoprefixer clerk-js strapi mysql google-gemini-api react-pdf
+    ```
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+## Authentication
 
-## 📚 Learn more
+1. **Implement social and email password authentication with Clerk:**
+    - Follow Clerk's documentation to set up and integrate authentication in your React app.
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+## CMS Setup
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+1. **Strapi CMS Setup from Scratch:**
+    - Install Strapi globally: `npm install strapi@latest -g`
+    - Create a new Strapi project: `strapi new my-project`
+    - Follow the setup wizard to configure your Strapi CMS.
 
-## ✨ Community
+## Database Setup
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+1. **MySQL Database Setup:**
+    - Install MySQL and create a database for your project.
+    - Configure the database connection in your Strapi project.
 
----
+## AI Integration
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+1. **Generate AI Form with Google Gemini API:**
+    - Sign up for Google Gemini API and get your API key.
+    - Integrate the API in your project to generate AI forms.
+
+2. **Setup Gemini API: AI Model:**
+    - Configure and train your AI model using Google Gemini API.
+
+3. **Generate Content from AI for Resume:**
+    - Use the AI model to generate content for resumes dynamically.
+
+## Dynamic Forms
+
+1. **Build Dynamic Forms:**
+    - Create forms that dynamically generate fields based on user input and AI suggestions.
+
+## PDF Generation
+
+1. **Convert React HTML to PDF:**
+    - Use the `react-pdf` library to convert your React components into PDF documents.
+
+## Deployment
+
+1. **Deploy App on Cloud / Vercel:**
+    - Set up deployment scripts and configurations for deploying your app on cloud platforms like Vercel.
+
+## Step by Step Tutorial
+
+For a detailed step-by-step tutorial, please refer to the `docs` directory in this repository.
+
+## Contributing
+
+Feel free to contribute to this project by opening issues and submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License.
